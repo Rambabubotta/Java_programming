@@ -1,0 +1,27 @@
+class ram{
+public static int lsearch(int arr[],int key){
+int index,k=0;
+for(int i:arr){
+if(i==key)
+{
+return k;
+}
+k++;
+}
+
+return -1;
+
+}
+public static void main(String[] args){
+int arr[]={10,30,40,60,80,50};
+int key=60;
+int pos=lsearch(arr,key);
+if(pos!=-1)
+{
+System.out.println("key is found at "+pos);
+}
+else{
+System.out.println("key is not found");
+}
+}
+}
